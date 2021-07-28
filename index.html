@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>log-in</title>
+	<style>
+	* { margin: 0; padding: 0;}
+	body{
+		background-color:#eeeeee;
+		margin: 0 auto;
+		font-size: 12px;
+	}
+	a { text-decoration: none; color: gray;}  
+	#logbox{
+		width: 300px;
+		margin: 100px auto;
+		background-color: white;
+		text-align: center;
+		padding: 20px;
+	}
+</style>
+<script src="/__/firebase/4.10.1/firebase-app.js"></script>
+<script src="/__/firebase/4.10.1/firebase-auth.js"></script>
+<script src="/__/firebase/4.10.1/firebase-database.js"></script>
+<script src="/__/firebase/4.10.1/firebase-messaging.js"></script>
+<script src="https://www.gstatic.com/firebasejs/5.0.4/firebase.js"></script>
+<script>
+  // Initialize Firebase
+  var config = {
+    apiKey: "AIzaSyD74l7MSYJP-dkd_owrp8LqaT2Ejc8idf0",
+    authDomain: "soso-a057d.firebaseapp.com",
+    databaseURL: "https://soso-a057d.firebaseio.com",
+    projectId: "soso-a057d",
+    storageBucket: "soso-a057d.appspot.com",
+    messagingSenderId: "534852496002"
+  };
+  firebase.initializeApp(config);
+</script>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
+<script type="text/javascript" src="login.js"></script>
+<meta charset="utf-8">
+</head>
+<body>
+	<div id="logbox">
+		<img src="logo.png" width="200" height="100"><br>
+		<form name="myform" method="post">
+			<input type="text" placeholder="ID" name="id"><br><br>
+			<input type="password" placeholder="Password" name="pw"><br><br>
+		</form>
+		<a id="url" href="main.html"><input id="login" type="button" value="log in" name="login"></a><br>
+		<br><hr><br>
+		<p>비밀번호를 잊으셨나요?<br> <a href="findpw.html">비밀번호 찾기</a></p><br>
+		<p>계정이 없으신가요?<br> <a href="join.html">가입하기</a></p>
+	</div>
+
+</body>
+</html>

@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+<html>
+<head>
+	<title>SOSO</title>
+	<link rel="stylesheet" type="text/css" href="main.css">
+	<meta charset="utf-8">
+	<script src="/__/firebase/4.10.1/firebase-app.js"></script>
+	<script src="/__/firebase/4.10.1/firebase-auth.js"></script>
+	<script src="/__/firebase/4.10.1/firebase-database.js"></script>
+	<script src="/__/firebase/4.10.1/firebase-messaging.js"></script>
+	<script src="https://www.gstatic.com/firebasejs/3.1.0/firebase.js"></script>
+<script>
+	var config = {
+		apiKey: "AIzaSyD74l7MSYJP-dkd_owrp8LqaT2Ejc8idf0",
+		authDomain: "soso-a057d.firebaseapp.com",
+		databaseURL: "https://soso-a057d.firebaseio.com",
+		projectId: "soso-a057d",
+		storageBucket: "soso-a057d.appspot.com",
+		messagingSenderId: "534852496002"
+	};
+	firebase.initializeApp(config);
+</script>
+</head>
+<body>
+	<div id="page_wrapper">
+		<header>
+			<div id="header_contents" class="header_down">
+				<img id="logo" src="logo.jpg" height="25"/>
+				<div id="search">
+					<form onsubmit="return false;">
+						<input type="text" id="searchbox" placeholder="검색">
+					</form>
+					<img id="search_button" src="search.png">
+				</div>
+				<img id="mypage" src="mypage.png" width="25"/>
+				<img id= soso_add src="plus.png" width="25">
+			</div>
+		</header>
+		<section>
+			<div id="soso_content">
+				
+			</div>
+			<aside>
+				<div id="id">
+					<img src="profile.png" width="50" height="50"/>
+					<p id="myId"></p>
+				</div>
+				<div id="add_soso">
+					<div>
+						<p>SOSO :　</p>
+						<form enctype="multipart/form-data">
+							<input id="file_input" type="file" accept="audio/mp3,audio/ogg, audio/wav">
+						</form>
+					</div>
+					<br>
+					<div>
+						<p>TAG :　</p>
+						<input class="soso_tag" type="text" size="10" placeholder="#ASMR"/>
+						<input class="soso_tag" type="text" size="10" placeholder="#김재환"/>
+						<input class="soso_tag" type="text" size="10" placeholder="#목소리"/>
+					</div>
+					<br>
+					<button id="add">추가</button>
+				</div>
+				<div id="like_soso">
+					<p>인기있는 #해시태그</p>
+					<br>
+					<div id="pophash"></div>
+				</div>
+				<div id="top3">
+					<p>TOP 3 SOSO</p>
+					<div class="top" id="first">
+						<img id="play1" width="20" src="play.png">
+						<p id="tag1"></p>
+						<div id="heart">
+							<p id="heart1"></p>
+							<img src="heart.png" width="20"/>
+						</div>
+					</div>
+					<div class="top" id="second">
+						<img id="play2" width="20" src="play.png">
+						<p id="tag2"></p>
+						<div id="heart">
+							<p id="heart2"></p>
+							<img src="heart.png" width="20">
+						</div>
+					</div>
+					<div class="top" id="third">
+						<img id="play3" width="20" src="play.png">
+						<p id="tag3"></p>
+						<div id="heart">
+							<p id="heart3"></p>
+							<img src="heart.png" width="20">
+						</div>
+					</div>
+				</div>
+				<div id="footer">
+					<p>Created By SOSO Project</p>
+				</div>
+			</aside>
+		</section>
+	</div>
+	<script src="https://code.jquery.com/jquery-1.10.1.js"></script>
+	<script src="main.js"></script>
+</body>
+</html>

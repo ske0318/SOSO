@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+<html>
+<head>
+	<title>Join</title>
+	<style >
+	* { 
+		margin: 0;
+		padding: 0;
+	}
+	body {
+		background-color:#eeeeee;
+		margin: 0 auto;
+		font-size: 12px;
+	}
+	a {
+		text-decoration: none;
+		color: gray;
+	}  
+	#joinbox {
+		width: 300px;
+		margin: 100px auto;
+		background-color: white;
+		text-align: center;
+		padding: 20px;
+	}
+</style>
+<script src="/__/firebase/4.10.1/firebase-app.js"></script>
+<script src="/__/firebase/4.10.1/firebase-auth.js"></script>
+<script src="/__/firebase/4.10.1/firebase-database.js"></script>
+<script src="/__/firebase/4.10.1/firebase-messaging.js"></script>
+<script>
+	var config = {
+		apiKey: "AIzaSyD74l7MSYJP-dkd_owrp8LqaT2Ejc8idf0",
+		authDomain: "soso-a057d.firebaseapp.com",
+		databaseURL: "https://soso-a057d.firebaseio.com",
+		projectId: "soso-a057d",
+		storageBucket: "soso-a057d.appspot.com",
+		messagingSenderId: "534852496002"
+	};
+	firebase.initializeApp(config);
+</script>
+</head>
+<body>
+	<div id="joinbox">
+		<img src="logo.png" width="200" height="100"><br>
+		<input id="id" type="text" placeholder="ID" name="id">
+		<input id="check" type="button" value="중복확인"><br><br>
+		<input id="name" type="text" placeholder="name" name="name"><br><br>
+		<input id="pw" type="password" placeholder="Password" name="pw"><br><br>
+		<p>비밀번호 찾기 질문 : </p>
+		<form  name="myform" method="post">
+			<select name="question"> 
+				<option value="q1"> 어렸을적 별명은? </option> 
+				<option value="q2"> 가장 존경하는 교수님은? </option> 
+				<option value="q3"> 좋아하는 색깔은? </option> 
+			</select><br>
+		</form>
+		<input id="answer" type="text" name="answer"><br><br>
+		<input id="join" type="button" value="join" name="join"><br>
+		<br><hr><br>
+		<p>계정이 있으신가요?<br><a href="index.html">로그인 하기</a></p>
+	</div>
+	<script type="text/javascript" src="https://code.jquery.com/jquery-1.10.1.min.js"></script>
+	<script type="text/javascript" src="join.js"></script>
+</body>
+</html>

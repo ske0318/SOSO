@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+<html>
+<head>
+	<title>MyPage</title>
+	<link rel="stylesheet" type="text/css" href="mypage.css">
+	<meta charset="utf-8">
+	<script src="/__/firebase/4.10.1/firebase-app.js"></script>
+	<script src="/__/firebase/4.10.1/firebase-auth.js"></script>
+	<script src="/__/firebase/4.10.1/firebase-database.js"></script>
+	<script src="/__/firebase/4.10.1/firebase-messaging.js"></script>
+<script>
+	var config = {
+		apiKey: "AIzaSyD74l7MSYJP-dkd_owrp8LqaT2Ejc8idf0",
+		authDomain: "soso-a057d.firebaseapp.com",
+		databaseURL: "https://soso-a057d.firebaseio.com",
+		projectId: "soso-a057d",
+		storageBucket: "soso-a057d.appspot.com",
+		messagingSenderId: "534852496002"
+	};
+	firebase.initializeApp(config);
+</script>
+</head>
+<body>
+	<div id="page_wrapper">
+		<header>
+			<div id="header_contents" class="header_down">
+				<img id="logo" src="logo.jpg" height="25"/>
+				<div id="search">
+				</div>
+				<img id="logo2" src="logout.png" height="25" />
+				
+			</div>
+		</header>
+		<div id="main">
+			<div id="myInfo">
+				<div class="myId">
+					<p id="myID"></p>
+				</div>
+				<div id="myInfo2">
+					<div class="myInfo post">
+						<p id="postnum"></p>
+					</div>
+					<div class="myInfo follower">
+						<div class="wernum" onclick="myFunction()"><span id="wernum2"></span>
+						  <span class="popuptext" id="myPopup"></span>
+						</div>
+					</div>
+					<div class="myInfo following">
+						<div class="ingnum" onclick="myFunction2()"><span id="ingnum2"></span>
+						  <span class="popuptext2" id="myPopup2"></span>
+						</div>
+					</div>
+
+				</div>
+
+				<!-- <div class="myInfo-bgm">
+					<audio src="sorry.mp3" controls></audio>
+				</div> -->
+			</div>
+
+			<div id="myPost">
+				<input type="radio" id="post-list" name="tab" checked="checked">
+				<input type="radio" id="like-list" name="tab">
+
+				<center class="tab-title">
+					<label for="post-list" > My SoSo</label>
+					<label for="like-list" > Favorite SoSo</label>
+				</center>
+
+				<!-- 내 SOSO-->
+				<div class="myPost-list" id="mySOSO">
+					
+				</div>
+
+
+				<!-- 좋아요 한 SOSO-->
+				<div class="myPost-list" id="likeSOSO">
+					
+				</div>
+			</div>
+		</div>
+	</div>
+	<script src="https://code.jquery.com/jquery-1.10.1.js"></script>
+	<script src="mypage.js"></script>
+</body>
+</html>

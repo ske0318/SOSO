@@ -1,0 +1,67 @@
+{
+	"user" : [ 
+		{
+			"id":"soso1",
+			"name":"기은",
+			"password":"1234",
+			"question":"q1",
+			"answer":"미니언즈",
+			"following" : [ "soso2", "soso3", "soso4" ],
+			"follower" : [ "soso2", "soso3", "soso4" ]
+
+		},
+		{
+			"id":"soso2",
+			"name":"현정",
+			"password":"1111",
+			"question":"q1",
+			"answer":"미니언즈",
+			"following" : [ "soso1", "soso3", "soso4" ],
+			"follower" : [ "soso1", "soso3", "soso4" ]
+		},
+		{
+			"id":"soso3",
+			"name":"주경",
+			"password":"5678",
+			"question":"q1",
+			"answer":"미니언즈",
+			"following" : [ "soso1", "soso2", "soso4" ],
+			"follower" : [ "soso1", "soso2", "soso4" ]
+		},
+		{
+			"id":"soso4",
+			"name":"서희",
+			"password":"3456",
+			"question":"q1",
+			"answer":"미니언즈",
+			"following" : [ "soso2", "soso3", "soso1" ],
+			"follower" : [ "soso2", "soso3", "soso1" ]
+		}
+	],
+	"soso" : [
+		{
+			"uploader" : "soso2",
+			"liker" : [ "soso1", "soso2", "soso3" ],
+			"soso_url" : "sorry.mp3",
+			"tag" : [ "#김재환", "#신의목소리", "#워너원", "#만두" ]
+		},
+		{
+			"uploader" : "soso3",
+			"liker" : [ "soso1", "soso2", "soso3" ],
+			"soso_url" : "sorry.mp3",
+			"tag" : [ "#김재환", "#신의목소리", "#워너원", "#만두" ]
+		},
+		{
+			"uploader" : "soso4",
+			"liker" : [ "soso1", "soso2", "soso3" ],
+			"soso_url" : "sorry.mp3",
+			"tag" : [ "#김재환", "#신의목소리", "#워너원", "#만두" ]
+		},
+		{
+			"uploader" : "soso1",
+			"liker" : [ "soso1", "soso2", "soso3" ],
+			"soso_url" : "sorry.mp3",
+			"tag" : [ "#김재환", "#신의목소리", "#워너원", "#만두" ]
+		}
+	]
+}
